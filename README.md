@@ -35,9 +35,16 @@ Projeto desenvolvido na **Godot Engine** como um jogo 2D de aventura/plataforma.
 
 ---
 
-## 🖼️ Capturas de Tela
+🖼️ Capturas de Tela
 
-> _(Adicione aqui prints do menu, gameplay, coleta de chaves e tela de vitória)_
+**Menu Inicial**  
+![Menu Inicial](screenshots/menu_inicial.png)
+
+**Gameplay**  
+![Gameplay](screenshots/gameplay.png)
+
+**Menu Final**  
+![Menu Final](screenshots/menu_final.png)
 
 ---
 
