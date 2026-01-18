@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://dskq0iwwq0fqr"]
+
+[ext_resource type="Script" uid="uid://dulx5avgcbiis" path="res://key.gd" id="1_up4cr"]
+[ext_resource type="Texture2D" uid="uid://cyfw6kdcnmjqe" path="res://KeyFly/KeyFly1.jpeg" id="2_k4l57"]
+[ext_resource type="Texture2D" uid="uid://bsphk4t24def6" path="res://KeyFly/KeyFly2.jpeg" id="3_wp5jh"]
+[ext_resource type="Texture2D" uid="uid://cgxe432ssajbq" path="res://KeyFly/KeyFly3.jpeg" id="4_4kguk"]
+[ext_resource type="Texture2D" uid="uid://o3stn3t7ysd4" path="res://KeyFly/KeyFly4.jpeg" id="5_jo2lc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p0yg6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cr1a6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k4l57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wp5jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4kguk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jo2lc")
+}],
+"loop": true,
+"name": &"key",
+"speed": 5.0
+}]
+
+[node name="Key" type="Area2D"]
+script = ExtResource("1_up4cr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_p0yg6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cr1a6")
+animation = &"key"
+autoplay = "key"

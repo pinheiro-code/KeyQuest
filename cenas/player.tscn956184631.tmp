@@ -1,0 +1,75 @@
+[gd_scene load_steps=12 format=3 uid="uid://dg5xeeluwr2yg"]
+
+[ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Idle.png" id="1_8or6t"]
+[ext_resource type="Script" uid="uid://bpanr0scffs7o" path="res://cenas/player.gd" id="1_unwft"]
+[ext_resource type="Texture2D" uid="uid://bausni6inywyv" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Death.png" id="2_rijvs"]
+[ext_resource type="Texture2D" uid="uid://bqfjqbv1vr2oq" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Jump.png" id="4_mp0j6"]
+[ext_resource type="Texture2D" uid="uid://b7pkrn5h1n5lm" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Run1.png" id="5_8bq56"]
+[ext_resource type="Texture2D" uid="uid://dlhg7nbxeials" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Run2.png" id="6_tckef"]
+[ext_resource type="Texture2D" uid="uid://d01eopk6c4cx1" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Run3.png" id="7_ym2kn"]
+[ext_resource type="Texture2D" uid="uid://cal7r48xqmfrt" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Slide.png" id="8_vtxll"]
+[ext_resource type="Script" uid="uid://dbg7kgdvu0awf" path="res://cenas/animated_sprite_2d.gd" id="9_s1iqd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_unwft"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rijvs")
+}],
+"loop": true,
+"name": &"small_death",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8or6t")
+}],
+"loop": true,
+"name": &"small_idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mp0j6")
+}],
+"loop": true,
+"name": &"small_jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8bq56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tckef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ym2kn")
+}],
+"loop": true,
+"name": &"small_run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_vtxll")
+}],
+"loop": true,
+"name": &"small_slide",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8or6t"]
+size = Vector2(12, 16)
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 6
+script = ExtResource("1_unwft")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_unwft")
+animation = &"small_idle"
+script = ExtResource("9_s1iqd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8or6t")
