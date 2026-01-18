@@ -39,7 +39,7 @@ Projeto desenvolvido na **Godot Engine** como um jogo 2D de aventura/plataforma.
 
 | Menu Inicial                                    | Gameplay                                | Menu Final                                  |
 | ----------------------------------------------- | --------------------------------------- | ------------------------------------------- |
-| ![Menu Inicial](./screenshots/menu_inicial.png) | ![Gameplay](./screenshots/gameplay.png) | ![Menu Final](./screenshots/menu_final.png) |
+| ![Menu Inicial](./screenshots/menu_inicial.png) | ![Gameplay](./screenshots/menu_final.png) | ![Menu Final](./screenshots/gameplay.png) |
 
 ---
 
