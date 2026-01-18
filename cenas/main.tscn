@@ -1599,7 +1599,7 @@ tile_map_data = PackedByteArray("AAAPAAAAFAAAAAAAAAATAAAAFAAAAAAAAAAjAAAAFQAAAAA
 tile_set = SubResource("TileSet_iwfo7")
 
 [node name="Player" parent="." instance=ExtResource("5_5wwvk")]
-position = Vector2(-276, -1)
+position = Vector2(340, 0)
 fall_death_height = 200.0
 fall_death_speed = 500.0
 fall_debug = true
