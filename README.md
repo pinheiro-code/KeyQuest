@@ -67,7 +67,7 @@ Projeto desenvolvido na **Godot Engine** como um jogo 2D de aventura/plataforma.
 1. Clone ou baixe este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/keyquest.git
+   git clone https://github.com/pinheiro-code/KeyQuest.git
    ```
 
 2. Abra a pasta do projeto na **Godot Engine**.
